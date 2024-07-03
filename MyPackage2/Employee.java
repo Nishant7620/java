@@ -1,4 +1,5 @@
 
+// Encapsulation
 class Employee {
 
     private int id = 1;
