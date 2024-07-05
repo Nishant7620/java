@@ -15,8 +15,6 @@ public class test {
         // Accessing Child properties using child object
         child.child_property();
         child.parent_property();  // we can asscess parent property using child object
-        
-        
-    
+
     }
 }
