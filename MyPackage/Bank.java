@@ -13,7 +13,7 @@ public abstract class Bank {
     abstract void readData();
 
     abstract void writeData();   // we are able to delcare abstract methods but we are not able to declare body 
-    //of method or can't implement logic in abstract class
+                                //of method or can't implement logic in abstract class
 }
 
 class Admin extends Bank {
