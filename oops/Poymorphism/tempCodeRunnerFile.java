@@ -1,0 +1,1 @@
+Animal cat = new Cat();
