@@ -1,3 +1,4 @@
+// Multiple inheritance is possible only with Interface in java
 
 interface Flyable {
 
