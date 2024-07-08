@@ -1,9 +1,13 @@
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.Deque;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -11,6 +15,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Set;
 import java.util.Stack;
+import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.Vector;
 
@@ -140,6 +145,54 @@ public class CollectionFramework {
         deque.offerLast(40);
         deque.offerFirst(30);
         System.out.println(deque);
-    }
 
+        //Map = 2
+        //HashMap
+        HashMap<String, Integer> hashmap = new HashMap<String, Integer>();
+        hashmap.put("Second", 20);
+        hashmap.put("first", 2);
+        System.out.println(hashmap);
+
+        //TreeMap
+        TreeMap<String, Integer> treemap = new TreeMap<String, Integer>();
+        treemap.put("Second", 20);
+        treemap.put("first", 2);
+        System.out.println(treemap.get("first"));
+        System.out.println(treemap);
+        System.out.println(treemap.keySet());
+        System.out.println(treemap.values());
+
+        //example
+        int arr[] = {1, 20, 8, 2, 10, 20, 25, 15};
+        for (int e : arr) {
+            System.out.print(e+ ",");
+        }
+        Arrays.sort(arr);
+        System.out.println();
+        for(int e: arr){
+            System.out.print(e+",");
+        }
+        System.out.println(Arrays.binarySearch(arr,25));   // 7 address of 25
+        System.out.println(Arrays.binarySearch(arr,3));   // if value is not present it will return -3
+
+        ArrayList<String> mylist = new ArrayList<String>();
+        mylist.add("second");
+        mylist.add("first");
+        mylist.add("third");
+        System.out.println(mylist);
+        Collections.sort(mylist);
+        System.out.println(mylist);
+
+        //Interator
+
+        Iterator it = mylist.iterator();
+        while (it.hasNext()){
+         System.out.println("List vale "+it.next());
+        }
+
+
+
+
+
+    }
 }
